@@ -1,0 +1,2 @@
+git@github.com:Piwigo/piwigo-elegant.git
+33f845423aa836135e622d131df8d8de1e930e3c 2021-04-23 10:08:59 +0200
