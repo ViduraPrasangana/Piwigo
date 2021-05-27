@@ -21,17 +21,27 @@ body, h3, dt, h2, .throw, .content, label , LEGEND  {
 }
 
 th { color: #888; }
-INPUT, select, textarea { color:#666; background-color: #ccc; }
+INPUT, select, textarea { 
+color:#666; 
+background-color: #f3f3f3;
+
+}
+input[type="text"],input[type="search"], select, textarea {
+  border-radius: 8px; 
+  height: 1.75rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+}
+.search-input{
+  padding-left:30px !important;
+}
 option[disabled] { background-color: #ccc; }
 input[type="radio"], input[type="checkbox"] { background-color: transparent; }
 
 
 
-INPUT[type="text"], INPUT[type="password"], INPUT[type="file"] {
-	background-color: #ddd;
-}
-
-SELECT, TEXTAREA {
+INPUT[type="file"] {
 	background-color: #ddd;
 }
 
@@ -673,7 +683,7 @@ li.plupload_delete a:hover {background: url("images/cancelhover.svg")!important;
 .addFilesButtonChanged:hover {background-color: #BBB;}
 
 #checkActions a, .deleteDerivButtons a {background-color: #E8E8E8;}
-#filterList select, .pictureLevels select, #permitAction select {background-color: #FFF; color: #4E4E4E; border: 2px solid #7070704f !important; outline: none !important;}
+#filterList select, .pictureLevels select, #permitAction select {background-color: #FFF; color: #4E4E4E; border: 2px solid #7070704f !important; outline: none !important;height:unset;}
 #filter_category .selectize-input.items.full.has-options.has-items, #filter_tags .selectize-input.items.not-full.has-options,
 #filter_tags .selectize-input.items.not-full, #filter_search input, #action_associate .selectize-input.items.full.has-options.has-items,
 #action_dissociate .selectize-input.items.full.has-options.has-items {
