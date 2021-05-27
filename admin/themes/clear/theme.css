@@ -27,11 +27,14 @@ background-color: #f3f3f3;
 
 }
 input[type="text"],input[type="search"], select, textarea {
-  border-radius: 8px; 
   height: 1.75rem;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
+}
+select[multiple="multiple"] {
+  height: unset;
+  padding-left: 0px;
 }
 .search-input{
   padding-left:30px !important;
