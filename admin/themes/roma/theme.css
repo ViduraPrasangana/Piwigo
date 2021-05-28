@@ -323,12 +323,10 @@ a.stat-box:hover {
 
 #batchManagerGlobal #applyFilter {
   color: #3C3C3C;
-  background-color: #ececec;
 }
 
 #batchManagerGlobal #applyFilter:hover {
   color: white;
-  background-color: #ffc17e;
 }
 
 #batchManagerGlobal #filterList li {
@@ -853,11 +851,9 @@ li.plupload_delete a:hover {background: url("images/cancelhover.svg")!important;
 
 #batchManagerGlobal #applyFilter {
   color: #BFBFBF;
-  background-color: #3c3c3c;
 }
 
 #batchManagerGlobal #applyFilter:hover {
-  background-color: #202020;
 }
 /*Error message*/
 

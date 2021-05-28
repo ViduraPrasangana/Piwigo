@@ -132,18 +132,18 @@ $(window).bind("load", function() {
     <div class="themeActions">
 {if $theme.STATE == 'active'}
   {if $theme.ADMIN_URI}
-        <a href="{$theme.ADMIN_URI}" class="icon-cog">{'Configuration'|@translate}</a>
+        <a href="{$theme.ADMIN_URI}" class="icon-cog buttonLike">{'Configuration'|@translate}</a>
   {else}
         <div class="pluginUnavailableAction icon-cog tiptip" title="{'N/A'|translate}">{'Configuration'|@translate}</div>
   {/if}
   {if not $theme.IS_DEFAULT}
-        <a href="{$set_default_baseurl}{$theme.ID}" class="tiptip icon-star" title="{'Set as default theme for unregistered and new users'|@translate}">{'Set as default'|@translate}</a>
+        <a href="{$set_default_baseurl}{$theme.ID}" class="tiptip icon-star buttonLike" title="{'Set as default theme for unregistered and new users'|@translate}">{'Set as default'|@translate}</a>
   {else}
         <span class="tiptip icon-star" title="{'This is already the default theme'|@translate}">{'Set as default'|@translate}</span>
   {/if}
 {else}
   {if $theme.ACTIVABLE}
-      <a href="{$activate_baseurl}{$theme.ID}" title="{'Make this theme available to users'|@translate}" class="icon-plus tiptip">{'Activate'|@translate}</a>
+      <a href="{$activate_baseurl}{$theme.ID}" title="{'Make this theme available to users'|@translate}" class="icon-plus tiptip buttonLike">{'Activate'|@translate}</a>
   {else}
       <span title="{$theme.ACTIVABLE_TOOLTIP}" class="icon-plus tiptip">{'Activate'|@translate}</span>
   {/if}

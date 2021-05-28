@@ -263,12 +263,10 @@ UL.thumbnails li.rank-of-image {background-color: #ddd;}
 
 #batchManagerGlobal #applyFilter,#batchManagerGlobal .addFilter-button {
   color: #3C3C3C;
-  background-color: #ececec;
 }
 
 #batchManagerGlobal #applyFilter:hover, #batchManagerGlobal .addFilter-button:hover {
   color: #111;
-  background-color: #ff9b32 ;
 }
 
 #batchManagerGlobal .addFilter-button.highlight {

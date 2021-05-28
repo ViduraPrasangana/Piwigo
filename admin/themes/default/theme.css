@@ -1831,11 +1831,7 @@ margin-top:4px; padding-bottom:3px; padding-top:3px; top:1px;
 
 .themeActions .pluginUnavailableAction {margin:0 10px 10px 10px;}
 
-.themeActions a:nth-child(1) {background-color: #ffc17e; color: #222;}
-.themeActions a:nth-child(1):hover {background-color: #ff7700; color: white; text-decoration: none;}
 
-.themeActions a:nth-child(2) {background-color: #ececec; color: #222;}
-.themeActions a:nth-child(2):hover {background-color: #ff9b32; color: #111; text-decoration: none;}
 
 #themesContent H3 {font-size:16px; text-align:left; border-bottom:1px solid #444; letter-spacing:1px; margin:5px;}
 .themeBoxes {min-height:0;text-align:left;}
