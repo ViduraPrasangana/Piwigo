@@ -67,8 +67,10 @@ jQuery(document).ready(function(){
 {/literal}{/footer_script}
 
 <div class="titrePage">
-<span class="sort">
-<i class="icon-filter"></i> {'Filter'|@translate} <input type="text" id="filter">
+<span class="sort" style="transform: translateY(6px);">
+<div style="position: relative;display: inline;">
+<span class="icon-filter search-icon"></span> <span class="icon-cancel search-cancel"></span><input class="search-input" placeholder="Filter" type="text" id="filter">
+</div>
 <i class="icon-sort-number-up"></i> {'Sort order'|@translate}
 {html_options name="selectOrder" options=$order_options selected=$order_selected}
 </span>
