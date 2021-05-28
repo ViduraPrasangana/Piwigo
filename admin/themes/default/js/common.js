@@ -128,12 +128,12 @@ function sprintf() {
 }
 
 $('.search-cancel').on('click', function () {
-  $('.search-input').val('');
-  $('.search-input').trigger ("input");
+  $('.search-input , .search-input-no-css').val('');
+  $('.search-input , .search-input-no-css').trigger ("input");
 })
 
-$('.search-input').on('input', function() {
-  if ($('.search-input').val() == '') {
+$('.search-input , .search-input-no-css').on('input', function() {
+  if ($('.search-input , .search-input-no-css').val() == '') {
     $('.search-cancel').hide();
   } else {
     $('.search-cancel').show();

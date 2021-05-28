@@ -995,7 +995,7 @@ span.infos, span.errors {background-image:none; padding:2px 5px; margin:0;border
 
 <table id="userList">
   <thead>
-    <tr>
+    <tr >
       <th>id</th>
       <th>{'Username'|@translate}</th>
       <th>{'Status'|@translate}</th>

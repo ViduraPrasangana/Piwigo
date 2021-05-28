@@ -124,7 +124,6 @@ a.Piwigo {
 a.Piwigo:hover  span.Piwigo  {
   border-bottom: 1px solid #0cc;
 }
-TABLE.table2 { border: 2px solid #dddddd; }
 
 *, *:focus, *:active, input:active, a:active, input:focus, a:focus { outline: none; -moz-outline-width: 0px; }
 A{

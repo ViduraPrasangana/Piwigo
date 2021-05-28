@@ -24,13 +24,13 @@ var colors = ["icon-red", "icon-blue", "icon-yellow", "icon-purple", "icon-green
 
 $(".limit-album-reached").hide();
 
-$('.search-input').on('input', () => {
+$('.search-input , .search-input-no-css').on('input', () => {
   updateSearch();
 })
 
 // Update the page according to the search field
 function updateSearch () {
-  string = $('.search-input').val();
+  string = $('.search-input , .search-input-no-css').val();
   $('.search-album-result').html("");
   $('.search-album-noresult').hide();
   $(".limit-album-reached").hide();
@@ -138,7 +138,7 @@ function prepare_skeleton() {
 prepare_skeleton();
 
 updateSearch();
-$('.search-input').focus();
+$('.search-input , .search-input-no-css').focus();
 {/literal}
 {/footer_script}
 
@@ -146,9 +146,7 @@ $('.search-input').focus();
   <div class="search-album-cont">
     <div class="search-album-label">{'Search albums'|@translate}</div>
     <div class="search-album-input-container" style="position:relative">
-      <span class="icon-search search-icon"></span>
-      <span class="icon-cancel search-cancel"></span>
-      <input class='search-input' type="text" placeholder="{'Portraits'|@translate}">
+      <input class='search-input-no-css' type="text" placeholder="{'Portraits'|@translate}">
     </div>
     <span class="search-album-help icon-help-circled" title="{'Enter a term to search for album'|@translate}"></span>
     <span class="search-album-num-result"></span>
