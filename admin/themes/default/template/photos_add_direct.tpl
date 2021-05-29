@@ -316,7 +316,7 @@ jQuery(document).ready(function(){
     <fieldset class="selectFiles">
       <legend><span class="icon-file-image icon-yellow"></span>{'Select files'|@translate}</legend>
       <div class="selectFilesButtonBlock">
-        <button id="addFiles" class="buttonGradient">{'Add Photos'|translate}<i class="icon-plus-circled"></i></button>
+        <button id="addFiles" class="buttonLike">{'Add Photos'|translate}<i class="icon-plus-circled"></i></button>
         <div class="selectFilesinfo">
           {if isset($original_resize_maxheight)}
           <p class="uploadInfo">{'The picture dimensions will be reduced to %dx%d pixels.'|@translate:$original_resize_maxwidth:$original_resize_maxheight}</p>
@@ -342,7 +342,7 @@ jQuery(document).ready(function(){
       <button id="cancelUpload" class="buttonLike icon-cancel-circled">{'Cancel'|translate}</button>
     </div>
 
-    <button id="startUpload" class="buttonGradient icon-upload" disabled>{'Start Upload'|translate}</button>
+    <button id="startUpload" class="buttonLike icon-upload" disabled>{'Start Upload'|translate}</button>
 
   </form>
 

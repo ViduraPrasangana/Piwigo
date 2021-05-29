@@ -1,0 +1,2 @@
+https://github.com/Piwigo/LocalFilesEditor.git
+dda691d3e45bfd166ac175c70bd8b91cb4917b6b 2021-04-23 15:19:13 +0200

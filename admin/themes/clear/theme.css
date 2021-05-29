@@ -21,17 +21,30 @@ body, h3, dt, h2, .throw, .content, label , LEGEND  {
 }
 
 th { color: #888; }
-INPUT, select, textarea { color:#666; background-color: #ccc; }
+INPUT, select, textarea { 
+color:#666; 
+background-color: #f3f3f3;
+
+}
+input[type="text"],input[type="search"], select, textarea {
+  height: 1.75rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+}
+select[multiple="multiple"] {
+  height: unset;
+  padding-left: 0px;
+}
+.search-input{
+  padding-left:30px !important;
+}
 option[disabled] { background-color: #ccc; }
 input[type="radio"], input[type="checkbox"] { background-color: transparent; }
 
 
 
-INPUT[type="text"], INPUT[type="password"], INPUT[type="file"] {
-	background-color: #ddd;
-}
-
-SELECT, TEXTAREA {
+INPUT[type="file"] {
 	background-color: #ddd;
 }
 
@@ -111,7 +124,6 @@ a.Piwigo {
 a.Piwigo:hover  span.Piwigo  {
   border-bottom: 1px solid #0cc;
 }
-TABLE.table2 { border: 2px solid #dddddd; }
 
 *, *:focus, *:active, input:active, a:active, input:focus, a:focus { outline: none; -moz-outline-width: 0px; }
 A{
@@ -251,12 +263,10 @@ UL.thumbnails li.rank-of-image {background-color: #ddd;}
 
 #batchManagerGlobal #applyFilter,#batchManagerGlobal .addFilter-button {
   color: #3C3C3C;
-  background-color: #ececec;
 }
 
 #batchManagerGlobal #applyFilter:hover, #batchManagerGlobal .addFilter-button:hover {
   color: #111;
-  background-color: #ff9b32 ;
 }
 
 #batchManagerGlobal .addFilter-button.highlight {
@@ -673,7 +683,7 @@ li.plupload_delete a:hover {background: url("images/cancelhover.svg")!important;
 .addFilesButtonChanged:hover {background-color: #BBB;}
 
 #checkActions a, .deleteDerivButtons a {background-color: #E8E8E8;}
-#filterList select, .pictureLevels select, #permitAction select {background-color: #FFF; color: #4E4E4E; border: 2px solid #7070704f !important; outline: none !important;}
+#filterList select, .pictureLevels select, #permitAction select {background-color: #FFF; color: #4E4E4E; border: 2px solid #7070704f !important; outline: none !important;height:unset;}
 #filter_category .selectize-input.items.full.has-options.has-items, #filter_tags .selectize-input.items.not-full.has-options,
 #filter_tags .selectize-input.items.not-full, #filter_search input, #action_associate .selectize-input.items.full.has-options.has-items,
 #action_dissociate .selectize-input.items.full.has-options.has-items {

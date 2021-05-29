@@ -31,7 +31,8 @@ if (isset($_POST['submit']))
 		set_status_header(403);
     $page['errors'][] = l10n('Invalid/expired form key');
   }
-
+  $containsLetter  = preg_match('/[a-zA-Z]/',    $_POST['password']);
+  $containsDigit   = preg_match('/\d/',          $_POST['password']);
   if(empty($_POST['password']))
   {
     $page['errors'][] = l10n('Password is missing. Please enter the password.');
@@ -45,6 +46,19 @@ if (isset($_POST['submit']))
     $page['errors'][] = l10n('The passwords do not match');
   }
 
+  if(strlen($_POST['password'])<6)
+  {
+    $page['errors'][] = l10n('Password should contain at least 6 characters');
+  }
+  if(!$containsLetter)
+  {
+    $page['errors'][] = l10n('Password should contain at least 1 letter');
+  }
+  if(!$containsDigit)
+  {
+    $page['errors'][] = l10n('Password should contain at least 1 number');
+  }
+  
   register_user(
     $_POST['login'],
     $_POST['password'],

@@ -25,7 +25,17 @@
         <span class="property">
           <label for="use_new_pwd">{'New password'|@translate}</label>
         </span>
-        <input type="password" name="use_new_pwd" id="use_new_pwd" value="">
+        <div style="display: flex;">
+          <input type="password" name="use_new_pwd" id="use_new_pwd" value="">
+          <ul style="margin-left:24px;">
+              <li style="list-style-type: disc; line-height: 16px; margin:0;">Should contain atleast 6 charactors
+              </li>
+              <li style="list-style-type: disc; line-height: 16px; margin:0;">Should contain atleast 1 number
+              </li>
+              <li style="list-style-type: disc; line-height: 16px; margin:0;">Should contain atleast 1 letter
+              </li>
+            </ul>
+        </div>
       </li>
       <li>
         <span class="property">

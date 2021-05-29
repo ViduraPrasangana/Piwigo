@@ -531,7 +531,7 @@ var sliders = {
 
       <div class="filterActions">
         <div id="addFilter">
-          <div class="addFilter-button icon-plus" onclick="$('.addFilter-dropdown').slideToggle()">{'Add a filter'|@translate}</div>
+          <div class="addFilter-button icon-plus buttonLike" onclick="$('.addFilter-dropdown').slideToggle()">{'Add a filter'|@translate}</div>
           <div class="addFilter-dropdown">
             <a data-value="filter_prefilter" {if isset($filter.prefilter)}class="disabled"{/if}>{'Predefined filter'|@translate}</a>
             <a data-value="filter_category" {if isset($filter.category)}class="disabled"{/if}>{'Album'|@translate}</a>
@@ -544,7 +544,7 @@ var sliders = {
           <a id="removeFilters" class="icon-cancel" style="display: none;">{'Remove all filters'|@translate}</a>
         </div>
 
-        <button id="applyFilter" name="submitFilter" type="submit">
+        <button class="buttonLike" id="applyFilter" name="submitFilter" type="submit">
           <i class="icon-arrows-cw"></i> {'Refresh photo set'|@translate}
         </button>
       </div>

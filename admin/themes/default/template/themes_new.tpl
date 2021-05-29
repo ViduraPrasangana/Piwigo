@@ -29,7 +29,7 @@ $(window).bind("load", function() {
 <div class="themeBox">
   <div class="themeShot"><a href="{$theme.screenshot}" class="preview-box" title="{$theme.name}"><img src="{$theme.screenshot}" onerror="this.src='{$default_screenshot}'"></a></div>
   <div class="themeName" title="{$theme.name}">{$theme.name}</div>
-  <div class="themeActions"><a href="{$theme.install_url}">{'Install'|@translate}</a></div>
+  <div class="themeActions"><a href="{$theme.install_url}" class="buttonLike">{'Install'|@translate}</a></div>
 </div>
 {/foreach}
 </div> <!-- themeBoxes -->

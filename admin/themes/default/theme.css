@@ -104,7 +104,6 @@ UL.thumbnails .levelIndicatorF {
 
 /* History tables */
 TABLE.table2 {
-	border: 1px solid #111;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -530,10 +529,8 @@ LI.menuLi {
 
 #catModify input[type="text"], #catModify textarea{
   width: 98%;
-  background-color: #f8f8f8;
-  padding: 8px;
-  border-radius: 4px;
-  border-color: #DDD;
+  margin-top: 8px;
+  margin-bottom: 8px;
   transition: ease 0.2s;
   font-family: "Open Sans", "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
 }
@@ -1834,11 +1831,7 @@ margin-top:4px; padding-bottom:3px; padding-top:3px; top:1px;
 
 .themeActions .pluginUnavailableAction {margin:0 10px 10px 10px;}
 
-.themeActions a:nth-child(1) {background-color: #ffc17e; color: #222;}
-.themeActions a:nth-child(1):hover {background-color: #ff7700; color: white; text-decoration: none;}
 
-.themeActions a:nth-child(2) {background-color: #ececec; color: #222;}
-.themeActions a:nth-child(2):hover {background-color: #ff9b32; color: #111; text-decoration: none;}
 
 #themesContent H3 {font-size:16px; text-align:left; border-bottom:1px solid #444; letter-spacing:1px; margin:5px;}
 .themeBoxes {min-height:0;text-align:left;}
@@ -2331,7 +2324,7 @@ LEGEND SPAN {
 
 #order_filters a.removeFilter {font-weight:normal;}
 #order_filters span.property span.filter:first-child a.removeFilter {display:none;} /* can't delete the first field */
-#order_filters span.filter {display:block;margin-left:20px;}
+#order_filters span.filter {display:block;margin-left:20px;margin-top: 4px;}
 #order_filters .transparent {opacity:0.5;filter:alpha(opacity=50);}
 #order_filters .order_by_is_custom {display:block;font-weight:normal;font-style:italic;margin-left:20px;}
 
@@ -4654,6 +4647,10 @@ li.plupload_delete a:hover {background: url("images/cancelhover.svg")!important;
 #action_add_tags .selectize-input.items.not-full.has-options, 
 #action_add_tags .selectize-input.items.not-full.has-options.focus.input-active.dropdown-active, .selectize-input.items.not-full, .selectize-input.items.full {
 	padding: 12px 10px; box-shadow: none; border-radius: 0px; border: 1px solid #787777a6;
+}
+.selectize-input.items.not-full{
+  border-radius: 8px;
+  background-color: #f3f3f3;
 }
 
 .pageNumberSelected {background-color: #ffaf58 !important; border: none !important; border-radius: 0 !important;}

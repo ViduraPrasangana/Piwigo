@@ -171,7 +171,7 @@ $(document).ready( function(){
 {/footer_script}
 <table id="rateTable">
 <thead>
-<tr class="throw">
+<tr class="throw" style="background-color: #fff;">
 	<th class="dtc_user">{'Username'|@translate}</th>
 	<th class="dtc_date">{'Last'|@translate}</th>
 	<th class="dtc_stat">{'Number of rates'|@translate}</th>
