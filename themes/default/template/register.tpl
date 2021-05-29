@@ -26,7 +26,18 @@
         <span class="property">
           <label for="password">* {'Password'|@translate}</label>
         </span>
-        <input type="password" name="password" id="password" >
+        <div style="display: flex;">
+          <input type="password" name="password" id="password" >
+          <ul style="margin-left:24px;">
+            <li style="list-style-type: disc; line-height: 16px; margin:0;">Should contain atleast 6 charactor
+            </li>
+            <li style="list-style-type: disc; line-height: 16px; margin:0;">Should contain atleast 1 number
+            </li>
+            <li style="list-style-type: disc; line-height: 16px; margin:0;">Should contain atleast 1 letter
+            </li>
+          </ul>
+        </div>
+        
       </li>
       <li>
         <span class="property">
