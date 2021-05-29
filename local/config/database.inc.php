@@ -1,8 +1,8 @@
 <?php
 $conf['dblayer'] = 'mysqli';
-$conf['db_base'] = 'piwigo';
-$conf['db_user'] = 'root';
-$conf['db_password'] = '';
+$conf['db_base'] = 'id16928942_piwigo';
+$conf['db_user'] = 'id16928942_root';
+$conf['db_password'] = '@ms?$AJ[w[tu}1p+';
 $conf['db_host'] = 'localhost';
 
 $prefixeTable = 'piwigo_';
