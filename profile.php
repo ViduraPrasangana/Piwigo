@@ -150,6 +150,20 @@ function save_profile_from_post($userdata, &$errors)
 
   if (!empty($_POST['use_new_pwd']))
   {
+    $containsLetter  = preg_match('/[a-zA-Z]/',    $_POST['use_new_pwd']);
+    $containsDigit   = preg_match('/\d/',          $_POST['use_new_pwd']);
+    if(strlen($_POST['use_new_pwd'])<6)
+    {
+      $errors[] = l10n('Password should contain at least 6 characters');
+    }
+    if(!$containsLetter)
+    {
+      $errors[] = l10n('Password should contain at least 1 letter');
+    }
+    if(!$containsDigit)
+    {
+      $errors[] = l10n('Password should contain at least 1 number');
+    }
     // password must be the same as its confirmation
     if ($_POST['use_new_pwd'] != $_POST['passwordConf'])
     {
